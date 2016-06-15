@@ -1,11 +1,72 @@
-== README
+== Cheetah - Agile tool
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Cheetah's vision is to bring the physical world of working with sticky's to the virtual with cool features to make working in Agile simpler and FASTER.
 
-Things you may want to cover:
+Initial commit includes:
 
-* Ruby version
+* the taskboard where you can view all your stories
+
+* clicking on the arrow on each story brings down the tasks associated with that story
+
+* edit each stories' keyword & title by double-clicking and pressing 'Enter'
+
+* change each stories' points by clicking and selecting from list
+
+* edit each tasks' description by double-clicking
+
+* change hours left on each task by clicking on progress bar
+
+* shuffle stories around to re-order them
+
+
+TO DO's for near future:
+
+* exclude story point already chosen from list 
+
+* cancel and close list on clicks outside of it
+
+* fix bits of story-points list background showing on start of expand
+
+* hard limits on story keyword, title, & task description length
+
+* status section which automatically changes from 'Not Started' to 'In Progress' to 'Done' based on tasks' remaining hours
+
+* cancel adding tasks when clicked outside of task
+
+* modify Taskboard menu to display each profile pic with capacity next to it
+
+* edit function on each story which pops up editable fields 
+
+* edit function on each task which pops up editable fields - task description, total hours, hours remaining, assigned people
+
+
+
+TO DO's for later future
+
+* Taskboard profile pics to be draggable. Dragging a pic to a task will assign that person to the task.
+
+* Taskboards to include colors and pins which are also draggable and add-able to each stories
+
+* sliding effect on opening tasks list and re-ordering stories
+
+* Tasks to align themselves like solitaire when stacked
+
+* better deign on Taskboard when toggled/not
+
+* Backlog page which will be a table of backlog items. Inline editable.
+
+* 'Add story' function on the backlog page
+
+* Filtering ability on both Backlog page and Taskboard page
+
+* saving the reordering of stories (currently not saved)
+
+
+
+
+Additional details:
+
+* Ruby version: ruby 2.2.3 
 
 * System dependencies
 
