@@ -1,0 +1,20 @@
+<li id="<%= task.id %>">
+							
+	<p class="editable task"><%= task.description %></p>
+	
+	
+	<div class="assigned">
+		
+	</div>
+
+	<div>
+		<% task.hours_left.times do |i| %>
+			<div class="bar green" id="<%= i %>"></div>
+		<% end %>
+		<% (task.hours_total - task.hours_left).times do |i| %>
+			<div class="bar grey" id="<%= task.hours_left+i %>"></div>
+		<% end %>
+	</div>
+
+	<div class="placeholder"></div>
+</li>

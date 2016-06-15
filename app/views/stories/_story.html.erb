@@ -1,0 +1,35 @@
+
+			<div class="sticky-container">
+				<div class="sticky" id="<%= story.id %>">
+					<h4 class="editable keyword"> <%= story.keyword %></h4>
+					<p class="editable title"> <%= story.title %> </p>
+					<div class="tags">
+					</div>
+					<div class="story-points">
+						<p><%= story.story_points %></p>
+					</div>
+					<div class="story-points-expandable">
+						<p>0</p>
+						<p>&frac12</p>
+						<p>1</p>
+						<p>2</p>
+						<p>3</p>
+						<p>5</p>
+						<p>8</p>
+						<p>3</p>
+					</div>
+					<span class="glyphicon glyphicon-plus"></span>
+					<span class="glyphicon glyphicon-triangle-bottom"></span>
+				</div>
+			
+				
+				<div class="tasks">
+					<ul>
+						
+						<%= render story.tasks %>
+						
+					</ul>
+				</div>
+
+
+			</div>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cheetah</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Reenie+Beanie' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+	<div class="header">
+		<div class="container">
+			<div class="row display">
+				<div class="col-md-6 logo">
+					<h3>Cheetah</h3>
+				</div>
+				
+				<div class="col-md-3 sprint-info">
+					<div class="sprint">
+						<a href="#"><span class="glyphicon glyphicon-chevron-left"></span></a>
+						<span class="vertical-center"><h1>13.4</h1></span>
+						<a href="#"><span class="glyphicon glyphicon-chevron-right"></span></a>
+					</div>
+					<div class="sprint-numbers">
+					</div>
+				</div>
+				<div class="col-md-3 burndown-chart">
+					<img src="http://placehold.it/200x70">
+				</div>
+				
+			</div>
+			<div class="menu">
+				<ul class="nav nav-pills">
+					<li role="presentation"><a href="#">Home</a></li>
+					<li><a href="#">Plan</a></li>
+					<li><a href="#">Backlog</a></li>
+					<li class="active"><a href="#">Taskboard</a></li>
+					<ul class="nav navbar-nav navbar-right">
+						<li><span class="glyphicon glyphicon-user"></span></li>
+						<li><a href="#">Profile</a></li>
+						<li><span class="glyphicon glyphicon-cog"></span></li>
+						<li><a href="#">Settings</a></li>
+					</ul>
+				</ul>
+		
+			</div>
+		</div>
+	</div>
+
+
+				<%= yield %>
+
+
+	<div class="footer">
+		<div class="container">
+			<p>&copy cheetah agile</p>
+		</div>
+	</div>
+
+
+</body>
+</html>

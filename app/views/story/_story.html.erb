@@ -1,0 +1,46 @@
+<!--<% @stories.each do |story| %>-->
+			<div class="sticky-container">
+				<div class="sticky" data-id="<%= story.id %>">
+					<h4 class="editable keyword"> <%= story.keyword %></h4>
+					<p class="editable title"> <%= story.title %> </p>
+					<div class="tags">
+					</div>
+					<div class="story-points">
+						<p><%= story.story_points %></p>
+					</div>
+					<span class="glyphicon glyphicon-triangle-bottom"></span>
+				</div>
+
+				
+				<div class="tasks">
+					<ul>
+
+
+						<% story.tasks.each do |t| %>
+						<li>
+							
+							<p><%= t.description %></p>
+							
+							
+							<div class="assigned">
+								
+							</div>
+						
+							<div class="progres">
+								<% t.hours_left.times do %>
+									<div class="bar"></div>
+								<% end %>
+								<% (t.hours_total - t.hours_left).times do %>
+									<div class="bar grey"></div>
+								<% end %>
+							</div>
+
+							<div class="placeholder"></div>
+						</li>
+						<% end %>
+					</ul>
+				</div>
+
+
+			</div>
+	<!--	<% end %>	-->

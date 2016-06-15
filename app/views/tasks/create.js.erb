@@ -1,0 +1,2 @@
+//debugger;
+$('.poster').find('.sticky').filter('#<%= @task.story_id %>').siblings('.tasks').children('ul').append("<%= escape_javascript(render(@task)) %>");
